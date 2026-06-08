@@ -47,14 +47,14 @@ sudo apt install libqt6multimedia6 python3-pyqt6.qtmultimedia
 
 ## Keyboard Shortcuts
 
-| Key | Action |
-|---|---|
-| `Space` | Start / Pause / Resume |
-| `R` | Reset current session |
-| `Ctrl+1` | Go to Timer |
-| `Ctrl+2` | Go to Tasks |
-| `Ctrl+3` | Go to Dashboard |
-| `Ctrl+,` | Open Settings |
+| Shortcut | Action |
+|-----------|---------|
+| `Space` | Start, pause, or resume the timer |
+| `Ctrl + R` | Reset the current session |
+| `Ctrl + 1` | Switch to the Timer view |
+| `Ctrl + 2` | Switch to the Tasks view |
+| `Ctrl + 3` | Switch to the Dashboard view |
+| `Ctrl + ,` | Open Settings |
 
 ## Data Storage
 
