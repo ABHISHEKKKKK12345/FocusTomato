@@ -421,6 +421,9 @@ class MainWindow(QMainWindow):
             if key == Qt.Key.Key_Comma:
                 self._open_settings()
                 return
+            if key == Qt.Key.Key_R:
+              self._ctrl.reset_timer()
+              return
             if key == Qt.Key.Key_1:
                 self._navigate("timer")
                 return
