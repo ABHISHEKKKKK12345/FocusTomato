@@ -372,7 +372,7 @@ class SettingsDialog(QDialog):
         self._current_accent = "#E85D4A"
         self._update_accent_preview()
         self._btn_pick_accent = QPushButton("Change…")
-        self._btn_pick_accent.setFixedWidth(90)
+        self._btn_pick_accent.setFixedWidth(120)
         self._btn_pick_accent.clicked.connect(self._pick_accent)
         ah.addWidget(self._accent_preview)
         ah.addSpacing(4)
