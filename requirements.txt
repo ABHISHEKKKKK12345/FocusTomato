@@ -1,0 +1,9 @@
+PyQt6>=6.6.0
+PyQt6-Qt6>=6.6.0
+PyQt6-sip>=13.6.0
+
+# Optional — better OS-native desktop notifications
+# plyer>=2.1.0
+
+# Optional — richer audio on some Linux setups
+# PyQt6-Qt6-Multimedia (bundled with PyQt6 on most platforms)
