@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import logging
 from typing import Optional, TYPE_CHECKING
+from PyQt6.QtGui import QShortcut, QKeySequence
 
 from PyQt6.QtCore import Qt, QRectF, pyqtSignal
 from PyQt6.QtGui import (
@@ -234,6 +235,8 @@ class MainWindow(QMainWindow):
     def __init__(self, controller: "AppController") -> None:
         super().__init__()
         self._ctrl = controller
+        self._shortcut_space = QShortcut(QKeySequence("Space"), self)
+        self._shortcut_space.activated.connect(self._ctrl.toggle_pause)
         self._tray: Optional[QSystemTrayIcon] = None
         self._current_nav = "timer"
 
@@ -414,9 +417,6 @@ class MainWindow(QMainWindow):
         key = event.key()
         mods = event.modifiers()
 
-        if key == Qt.Key.Key_Space:
-            self._ctrl.toggle_pause()
-            return
         if mods == Qt.KeyboardModifier.ControlModifier:
             if key == Qt.Key.Key_Comma:
                 self._open_settings()
